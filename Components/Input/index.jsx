@@ -8,7 +8,7 @@ const Input = () => {
       height: 100%;
       padding: 2%;
 
-	border: 1px solid blue
+	border: 1px solid blue;
    `;
 
    const Wrapper = styled.View`
