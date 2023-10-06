@@ -1,25 +1,20 @@
-import { StyleSheet, Text, View } from 'react-native';
+import { StyleSheet, Text, View } from "react-native";
 
-import MyButton from './Components/Button';
-
+import MyButton from "./Components/Button";
+import Input from "./Components/Input";
 
 export default function App() {
-  return (
-    <View style={styles.container}>
-
-      <MyButton
-      text="A"
-      color="#f0f"
-      />
-    </View>
-  );
+   return (
+      <View
+         style={{
+            flex: 1,
+            display: "flex",
+            alignItems: "center",
+            justifyContent: "space-evenly",
+         }}
+      >
+        <Input></Input>
+        <MyButton type="Login" />
+      </View>
+   );
 }
-
-const styles = StyleSheet.create({
-  container: {
-    flex: 1,
-    backgroundColor: '#fff',
-    alignItems: 'center',
-    justifyContent: 'center',
-  },
-});

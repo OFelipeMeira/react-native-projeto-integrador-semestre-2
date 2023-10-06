@@ -1,32 +1,44 @@
 import React, { useState } from "react";
-import { Pressable, Text } from "react-native";
-import styled from "styled-components";
-
-import style from "./style.css";
+import styled from "styled-components/native";
 
 const MyButton = (props) => {
-  const { text, color } = props;
-  const click = () => {
-    console.log(style.buttonTxt);
-  };
+   const { type } = props;
 
-  const Button = styled.button`
-    color: ${color};
-  `;
+   const Button = styled.TouchableOpacity`
+      background-color: #2890ff;
+      width: 80%;
+      height: 50px;
+      padding: 2%;
+      border-radius: 5px;
+   `;
 
-  return <Button>{text}</Button>;
+   const Text = styled.Text`
+      color: #ffffff;
+      font-size: 25px;
+      margin: auto;
+   `;
+
+   switch (type) {
+      case "Login":
+         return (
+            <Button>
+               <Text>Login</Text>
+            </Button>
+         );
+      case "Register":
+         return (
+            <Button>
+               <Text>Register</Text>
+            </Button>
+         );
+
+      default:
+         return (
+            <Button>
+               <Text>Errou ai irmão</Text>
+            </Button>
+         );
+   }
 };
 
 export default MyButton;
-
-
-
-Compnente(
-    Style(
-        dsad,
-        dsadm,
-        dsad.,
-        m
-    )
-
-)

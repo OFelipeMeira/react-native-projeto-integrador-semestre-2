@@ -1,0 +1,23 @@
+:root {
+  --background-primary: #FFF;
+  --background-secondary: #f7f7f7;
+  --color-primary: #007BFF;
+  --font-color-1: #000000;
+  --font-color-2: #FFF;
+}
+
+[data-theme="dark"] {
+  --background-primary: #202020;
+  --background-secondary: #3f3f3f;
+  --color-primary: #2890ff;
+  --font-color-1: #ffffff;
+  --font-color-2: #000000;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  font-family: 'Montserrat', sans-serif;
+  transition: all 0.3s ease-in-out;
+  box-sizing: border-box;
+}
