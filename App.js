@@ -1,11 +1,22 @@
 import { StatusBar } from 'expo-status-bar';
 import { StyleSheet, Text, View } from 'react-native';
 
+import LoginPage from './Page/LoginPage'
+import RegisterPage from './Page/RegisterPage';
+
 export default function App() {
   return (
-    <View style={styles.container}>
-      <Text>Open up App.js to start working on your app!</Text>
-      <StatusBar style="auto" />
-    </View>
+
+//    <LoginPage />
+   <RegisterPage />
   );
 }
+
+const styles = StyleSheet.create({
+   view:{
+      flex:1,
+      alignContent:'center',
+      justifyContent:'center',
+
+   }
+})

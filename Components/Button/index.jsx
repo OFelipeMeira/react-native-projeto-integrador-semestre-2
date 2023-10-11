@@ -4,7 +4,7 @@ import styled from "styled-components/native";
 const MyButton = (props) => {
    const { type } = props;
 
-   const Button = styled.TouchableOpacity`
+   const Login = styled.TouchableOpacity`
       background-color: #2890ff;
       width: 80%;
       height: 50px;
@@ -12,31 +12,42 @@ const MyButton = (props) => {
       border-radius: 5px;
    `;
 
-   const Text = styled.Text`
+   const LoginText = styled.Text`
       color: #ffffff;
       font-size: 25px;
+      margin: auto;
+   `;
+
+   const Register = styled.TouchableOpacity`
+      width: 30%;
+      height: 30px;
+      border-radius: 5px;
+   `;
+   const RegisterText = styled.Text`
+      color: #2890ff;
+      font-size: 17px;
       margin: auto;
    `;
 
    switch (type) {
       case "Login":
          return (
-            <Button>
-               <Text>Login</Text>
-            </Button>
+            <Login>
+               <LoginText>Login</LoginText>
+            </Login>
          );
       case "Register":
          return (
-            <Button>
-               <Text>Register</Text>
-            </Button>
+            <Register>
+               <RegisterText>Register</RegisterText>
+            </Register>
          );
 
       default:
          return (
-            <Button>
+            <Login>
                <Text>Errou ai irmão</Text>
-            </Button>
+            </Login>
          );
    }
 };
